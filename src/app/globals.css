@@ -15,11 +15,26 @@ body{
   box-sizing: border-box;
 }
 
+.wrapper{
+  @apply max-w-[1280px] mx-auto px-5
+}
+.hero-heading{
+  @apply text-[84px] font-bold leading-[1.2em]
+}
 
-/* @layer utilities {
-  .wrapper {
-    @apply flex flex-col items-center justify-center min-h-screen max-[1200px] px-6 py-4 sm:px-6 lg:px-8;
-  }
-} */
+.section-heading{
+  @apply text-[44px] text-[#101010] font-bold leading-[1.3em]
+}
 
 
+.section-title{
+  @apply text-base text-[#212529] font-semibold
+}
+
+.sub-heading{
+  @apply text-2xl font-semibold
+}
+
+.paragraph-text{
+@apply text-tertiary font-normal  leading-[1.7em]
+}
