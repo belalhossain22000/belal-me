@@ -13,7 +13,7 @@ const AboutMe: React.FC = () => {
                     <div className="absolute inset-0 bg-primary transform -skew-y-6 rounded-lg"></div>
                     <div className="relative z-10">
                         <Image
-                            src="/belal-2.png"
+                            src="/belalme-3-removebg-preview.png"
                             alt="Sadiq Siddiqui"
                             layout="responsive"
                             width={500}
@@ -22,7 +22,7 @@ const AboutMe: React.FC = () => {
                         />
                     </div>
                 </div>
-                <div className="lg:w-1/2 space-y-4 p-4">
+                <div className="lg:w-1/2 space-y-10 p-4">
 
                     <SectionTitle text='About Me' />
                     <h3 className="text-xl font-semibold">I am a Full-Stack Web Developer</h3>
@@ -59,7 +59,6 @@ const AboutMe: React.FC = () => {
                     </div>
                     <div className="flex space-x-4 mt-8">
                         <ButtonPrimary >Resume</ButtonPrimary>
-                        <ButtonOutline >Experience</ButtonOutline>
                     </div>
                 </div>
             </div>

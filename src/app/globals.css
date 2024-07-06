@@ -19,7 +19,7 @@ body{
   @apply max-w-[1280px] mx-auto px-5
 }
 .hero-heading{
-  @apply text-[84px] font-bold leading-[1.2em]
+  @apply text-[64px] font-bold leading-[1.2em]
 }
 
 .section-heading{
