@@ -1,4 +1,5 @@
 import AboutMe from '@/components/AboutMe/AboutMe'
+import Blogs from '@/components/Blogs/Blogs'
 import Contact from '@/components/Contact/Contact'
 import Hero from '@/components/Hero/Hero'
 import Projects from '@/components/Projects/Projects'
@@ -12,6 +13,7 @@ const Home = () => {
       <AboutMe/>
       <Skills/>
       <Projects/>
+      <Blogs/>
       <Contact/>
     </div>
   )
