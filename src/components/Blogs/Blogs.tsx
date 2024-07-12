@@ -1,9 +1,15 @@
+"use client"
 import React from 'react';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
+import { useGetAllBlogQuery } from '@/redux/api/blogApi';
+import Link from 'next/link';
 
 const Blogs = () => {
-  const blogs = [
+  const {data,isLoading}=useGetAllBlogQuery(undefined)
+  const blogs=data?.data
+  console.log(data)
+  const blogss = [
     {
       id: 1,
       title: "Become a UX/UI Designer With Career Foundry.",
@@ -28,12 +34,12 @@ const Blogs = () => {
   ];
 
   return (
-    <section className="py-12 bg-white wrapper">
+    <section name='blog' className="py-12 bg-white wrapper">
       <div className="container mx-auto px-4">
         <h2 className="text-center text-primary text-xl font-semibold mb-2">My Blog</h2>
         <h3 className="text-center text-dark text-4xl font-bold mb-8">LATEST BLOG</h3>
         <div className="flex flex-wrap -mx-4">
-          {blogs.map((blog) => (
+          {blogs?.map((blog) => (
             <div key={blog.id} className="w-full md:w-1/3 px-4 mb-8">
               <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                 <Image
@@ -46,12 +52,12 @@ const Blogs = () => {
                 <div className="p-6">
                   <p className="text-sm text-secondary mb-4">{blog.date}</p>
                   <h4 className="text-dark text-2xl font-semibold mb-4">{blog.title}</h4>
-                  <a
-                    href={blog.link}
+                  <Link
+                    href="/blog/2"
                     className="text-primary font-semibold flex items-center"
                   >
                     Read More <FaArrowRight className="ml-2" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

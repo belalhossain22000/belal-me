@@ -1,7 +1,13 @@
+"use client"
 import React from 'react';
 import SectionTitle from '../shared/SectionTitle/SectionTitle';
+import { useGetAllSkillsQuery } from '@/redux/api/skillApi';
 
-const Skills = () => {
+
+const Skills =  () => {
+  const {data , isLoading}=useGetAllSkillsQuery(undefined)
+  
+ 
     return (
         <section id="skills" className=" bg-secondary  py-20">
             <div className=" wrapper">
