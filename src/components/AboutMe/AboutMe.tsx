@@ -6,7 +6,7 @@ import ButtonOutline from '../shared/Button/ButtonOutline';
 import { IoCheckboxOutline } from "react-icons/io5";
 const AboutMe: React.FC = () => {
     return (
-        <div className="relative py-16 bg-white wrapper">
+        <section id="about" className="relative py-16 bg-white wrapper">
 
             <div className="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 lg:space-x-8">
                 <div className="relative w-full lg:w-1/2">
@@ -25,12 +25,12 @@ const AboutMe: React.FC = () => {
                 <div className="lg:w-1/2 space-y-10 p-4">
 
                     <SectionTitle text='About Me' />
-                    <h3 className="text-xl font-semibold">I am a Full-Stack Web Developer</h3>
+                    <h3 className="text-2xl font-semibold">I am a Full-Stack Web Developer</h3>
                     <p className='section-heading'>
                         I Can Design Anything You Want
                     </p>
                     <p className='paragraph-text'>
-                        Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id  quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolorrepellendus. Temporibus autem quibusdam et aut officiis. Nam libero tempore, cum soluta  nobis est eligendi optio cumque nihil impedit.
+                        I specialize in creating functional, user-friendly web applications using the MERN stack. My goal is to blend design and functionality to deliver high-quality, responsive web solutions.
                     </p>
                     <div className='flex justify-between items-center'>
                         <div className='flex items-center gap-4'>
@@ -52,10 +52,10 @@ const AboutMe: React.FC = () => {
 
                     </div>
                     <div className='grid grid-cols-2 gap-8'>
-                        <p className='text-base text-tertiary flex items-center gap-3 '><span><IoCheckboxOutline color='#FF6B00' size={20}/></span> Work simple and cline design</p>
-                        <p className='text-base text-tertiary flex items-center gap-3 '><span><IoCheckboxOutline color='#FF6B00' size={20}/></span> Web Design Full stack</p>
-                        <p className='text-base text-tertiary flex items-center gap-3 '><span><IoCheckboxOutline color='#FF6B00' size={20}/></span> User friendly design</p>
-                        <p className='text-base text-tertiary flex items-center gap-3 '><span><IoCheckboxOutline color='#FF6B00' size={20}/></span> Unlimited Revisions</p>
+                        <p className='text-base text-tertiary flex items-center gap-3 '><span><IoCheckboxOutline color='#FF6B00' size={20} /></span> Work simple and cline design</p>
+                        <p className='text-base text-tertiary flex items-center gap-3 '><span><IoCheckboxOutline color='#FF6B00' size={20} /></span> Web Design Full stack</p>
+                        <p className='text-base text-tertiary flex items-center gap-3 '><span><IoCheckboxOutline color='#FF6B00' size={20} /></span> User friendly design</p>
+                        <p className='text-base text-tertiary flex items-center gap-3 '><span><IoCheckboxOutline color='#FF6B00' size={20} /></span> Unlimited Revisions</p>
                     </div>
                     <div className="flex space-x-4 mt-8">
                         <ButtonPrimary >Resume</ButtonPrimary>
@@ -63,7 +63,7 @@ const AboutMe: React.FC = () => {
                 </div>
             </div>
 
-        </div>
+        </section>
     );
 };
 

@@ -9,7 +9,7 @@ const Skills =  () => {
   
  
     return (
-        <section id="skills" className=" bg-secondary  py-20">
+        <section id="skill" className=" bg-secondary  py-20">
             <div className=" wrapper">
                 <div className='flex flex-col items-center justify-center gap-3'>
 

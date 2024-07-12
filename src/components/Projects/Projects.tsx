@@ -48,7 +48,7 @@ const Projects = () => {
   const filteredProjects = projects?.filter(project => project.category === activeTab);
 
   return (
-    <section id="projects" className="wrapper text-white">
+    <section id="portfolio" className="wrapper text-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">My Projects</h2>
         <div className="flex justify-center mb-8">

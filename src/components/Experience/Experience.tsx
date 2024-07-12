@@ -24,7 +24,7 @@ const Experience = () => {
     const {data, isLoading } = useGetAllExperienceQuery(undefined)
     console.log(data)
     return (
-        <div className='wrapper py-10'>
+        <div className='wrapper py-10' id='experience'>
             <div className='flex flex-col items-center justify-center gap-4 mb-10'>
                 <SectionTitle text='Experience' />
                 <h1 className='section-heading'>Professional Experience</h1>
