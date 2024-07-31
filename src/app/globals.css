@@ -23,7 +23,7 @@ body{
 }
 
 .section-heading{
-  @apply text-[44px] text-[#101010] font-bold md:leading-[1.3em]
+  @apply md:text-[44px] text-[30px] text-[#101010] font-bold md:leading-[1.3em]
 }
 
 
