@@ -6,10 +6,10 @@ import Link from 'next/link';
 const Hero: React.FC = () => {
   const resumeLink = "https://drive.google.com/file/d/1BqrrdADB-hFG6eHwSqEQulmI4M10O6Vt/view?usp=drive_link";
   return (
-    <section id='home' className='bg-secondary  h-screen '>
-      <div className='wrapper flex justify-between '>
+    <section id='home' className='bg-secondary  '>
+      <div className='wrapper flex justify-between items-center  lg:flex-row flex-col-reverse'>
 
-        <div className='py-28 flex flex-col gap-8 w-1/2'>
+        <div className='md:py-28 py-14 flex flex-col gap-8 lg:w-1/2'>
           <SectionTitle text='I AM Belal Hossain' />
           <h2 className='hero-heading'>I am a FullStack Web Developer</h2>
           <p className='paragraph-text '>Welcome to my portfolio! I am a Full-Stack Developer with a keen eye for detail and a knack for problem-solving.Dive into my work to discover the breadth and depth of my skills.</p>
@@ -21,8 +21,8 @@ const Hero: React.FC = () => {
         </div>
 
         {/* right side image side */}
-        <div className='relative w-1/2'>
-          <Image src="/belalme-2.png" alt='belal' height={300} width={300} className='w-full h-[100vh] relative z-10  ' />
+        <div className='relative lg:w-1/2'>
+          <Image src="/belalme-2.png" alt='belal' height={300} width={300} className='w-full h-[100vh] relative z-10 object-cover ' />
           <Image src="/homeNannerShape.png" alt='belal' height={300} width={300} className=' absolute top-24 left-10 -z-0  animate-smoothBounce transition duration-700' />
         </div>
       </div>

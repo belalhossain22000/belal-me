@@ -19,16 +19,16 @@ body{
   @apply max-w-[1280px] mx-auto px-5
 }
 .hero-heading{
-  @apply text-[64px] font-bold leading-[1.2em]
+  @apply lg:text-[64px] md:text-[40px] text-[30px] font-bold md:leading-[1.2em]
 }
 
 .section-heading{
-  @apply text-[44px] text-[#101010] font-bold leading-[1.3em]
+  @apply text-[44px] text-[#101010] font-bold md:leading-[1.3em]
 }
 
 
 .section-title{
-  @apply text-base text-[#212529] font-semibold
+  @apply md:text-2xl text-lg text-[#212529] font-semibold
 }
 
 .sub-heading{

@@ -18,7 +18,7 @@ const AboutMe: React.FC = () => {
                             layout="responsive"
                             width={500}
                             height={500}
-                            className="rounded-lg shadow-lg"
+                            className="rounded-lg shadow-lg object-cover"
                         />
                     </div>
                 </div>
