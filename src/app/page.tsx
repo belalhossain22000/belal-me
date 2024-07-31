@@ -9,14 +9,14 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='container'>
+    <div className='container mx-auto'>
       <Hero />
-      <AboutMe/>
-      <Experience/>
-      <Skills/>
-      <Projects/>
-      <Blogs/>
-      <Contact/>
+      <AboutMe />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Blogs />
+      <Contact />
     </div>
   )
 }
