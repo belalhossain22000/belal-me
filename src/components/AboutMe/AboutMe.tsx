@@ -4,6 +4,7 @@ import SectionTitle from '../shared/SectionTitle/SectionTitle';
 import ButtonPrimary from '../shared/Button/ButtonPrimary';
 import ButtonOutline from '../shared/Button/ButtonOutline';
 import { IoCheckboxOutline } from "react-icons/io5";
+import Link from 'next/link';
 const AboutMe: React.FC = () => {
     return (
         <section id="about" className="relative py-16 bg-white wrapper">
@@ -57,9 +58,9 @@ const AboutMe: React.FC = () => {
                         <p className='text-base text-tertiary flex items-center gap-3 '><span><IoCheckboxOutline color='#FF6B00' size={20} /></span> User friendly design</p>
                         <p className='text-base text-tertiary flex items-center gap-3 '><span><IoCheckboxOutline color='#FF6B00' size={20} /></span> Unlimited Revisions</p>
                     </div>
-                    <div className="flex space-x-4 mt-8">
-                        <ButtonPrimary >Resume</ButtonPrimary>
-                    </div>
+                    <Link href={"#portfolio"} className="flex space-x-4 mt-8">
+                        <ButtonPrimary >Portfolio</ButtonPrimary>
+                    </Link>
                 </div>
             </div>
 
