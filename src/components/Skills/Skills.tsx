@@ -5,9 +5,12 @@ import { useGetAllSkillsQuery } from '@/redux/api/skillApi';
 
 
 const Skills =  () => {
-  const {data , isLoading}=useGetAllSkillsQuery(undefined)
+//   const {data , isLoading}=useGetAllSkillsQuery(undefined)
   
+//  if(isLoading) {
+//     return <div>Loading...</div>
  
+//  }
     return (
         <section id="skill" className=" bg-secondary  py-20">
             <div className=" wrapper">
